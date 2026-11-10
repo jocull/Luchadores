@@ -14,7 +14,8 @@ Developed by the O'Cull bros: [James O'Cull](https://github.com/jocull), [Max O'
 This is a Node v22 project. If you use Node Version Manager (NVM):
 
 ```
-nvm install --lts
+nvm install lts/jod
+nvm use lts/jod
 ```
 
 Then install the packages. It should automatically trigger a build afterward:
