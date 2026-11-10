@@ -7,9 +7,7 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
   ],
-  extends: [
-    'airbnb-typescript/base'
-  ],
+  extends: [],
   rules: {
     'class-methods-use-this': 'off',
     'eol-last': 'off',

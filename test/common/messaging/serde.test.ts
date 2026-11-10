@@ -39,8 +39,12 @@ test('encodes and decodes PlayerInputState', () => {
     type: events.TypeEnum.PlayerInputState,
     jump: true,
     mouseDown: true,
-    mouseDirection: { x: 1.5, y: 2.5, z: 3.5 },
-    moveDirection: { x: 4.5, y: 5.5, z: 6.5 },
+    mouseDirection: { x: 1.5,
+y: 2.5,
+z: 3.5 },
+    moveDirection: { x: 4.5,
+y: 5.5,
+z: 6.5 },
   } as IPlayerInputState);
   expect(ArrayBuffer.isView(encoded)).toBe(true);
 

@@ -13,7 +13,8 @@ class BBullet extends Projectile {
   public Hit(hit: Fighter) {
     super.Hit(hit);
     if (this.finished) {
-      MessageBus.publish('Audio_BulletWhizz', { pos: this.Position, obj: hit });
+      MessageBus.publish('Audio_BulletWhizz', { pos: this.Position,
+obj: hit });
     }
   }
 }

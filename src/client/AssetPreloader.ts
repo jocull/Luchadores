@@ -30,7 +30,8 @@ class AssetPreloaderImpl extends EventEmitter {
 
       image.onload = () => {
         this.loadedCount++;
-        this.emit('progress', { progress: this.getProgress(), file: source });
+        this.emit('progress', { progress: this.getProgress(),
+file: source });
         // TODO: Garbage collect these?
         resolve(image);
       };
@@ -47,7 +48,8 @@ class AssetPreloaderImpl extends EventEmitter {
       // that it can play without any suspected interruptions
       audio.addEventListener('canplaythrough', () => {
         this.loadedCount++;
-        this.emit('progress', { progress: this.getProgress(), file: source });
+        this.emit('progress', { progress: this.getProgress(),
+file: source });
         // TODO: Garbage collect these?
         resolve(audio);
       });
