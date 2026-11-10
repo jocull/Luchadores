@@ -7,7 +7,7 @@
   "scripts": {
     "pretest": "npm run build",
     "test": "JEST_JUNIT_OUTPUT_DIR='coverage' jest dist/test --coverage --reporters=default --reporters=jest-junit",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint .",
     "prepare": "husky",
     "fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "clean": "rm -rf dist/",
@@ -58,7 +58,7 @@
     "@typescript-eslint/eslint-plugin": "^8.7.0",
     "@typescript-eslint/parser": "^8.7.0",
     "clean-webpack-plugin": "^4.0.0",
-    "eslint": "^8.57",
+    "eslint": "^10.14.0",
     "husky": "^9.1.6",
     "jest": "^29.7.0",
     "jest-junit": "^17.0.0",
