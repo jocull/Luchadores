@@ -92,5 +92,10 @@
     "@typescript-eslint/typescript-estree": {
       "minimatch": "^11.0.6"
     }
+  },
+  "allowScripts": {
+    "bufferutil@4.2.0": true,
+    "protobufjs@7.6.6": true,
+    "utf-8-validate@6.0.6": true
   }
 }
