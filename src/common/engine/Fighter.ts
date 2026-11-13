@@ -203,9 +203,7 @@ class Fighter extends Prop {
   public Land(landVelocity: number = 0) {
     this.JustLanded = true;
     if (!this.riding) {
-      MessageBus.publish('Effect_Land', { velocity: landVelocity,
-mass: this.Mass,
-position: this.Position });
+      MessageBus.publish('Effect_Land', { velocity: landVelocity, mass: this.Mass, position: this.Position });
     }
   }
 

@@ -13,8 +13,7 @@ class SocketHost extends EventEmitter {
   constructor(server: http.Server) {
     super();
     this.clients = [];
-    this.ws = new WebSocket.Server({ server,
-path: '/socket' });
+    this.ws = new WebSocket.Server({ server, path: '/socket' });
     this.ws.on('connection', (socket, req) => this.onConnection(socket as any, req));
   }
 

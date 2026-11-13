@@ -248,8 +248,7 @@ class Prop extends Entity {
 
 
   public SetTexture(src: string, upscale: number = 1) {
-    MessageBus.publish('LoadAsset_Prop', { prop: this,
-texture: src });
+    MessageBus.publish('LoadAsset_Prop', { prop: this, texture: src });
     this.textureUpscale = upscale;
   }
 }

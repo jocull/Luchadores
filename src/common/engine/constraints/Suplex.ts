@@ -81,10 +81,8 @@ class CSuplex extends Constraint {
     ));
 
     // Fire animation events
-    MessageBus.publish(`Animation_Suplexor${inst.getOwnerID()}`, { fighter: inst,
-velo: this.peakFallVelocity }); // Instigator performed suplex
-    MessageBus.publish(`Animation_Suplexed${vict.getOwnerID()}`, { fighter: vict,
-velo: this.peakFallVelocity }); // Victim received suplex
+    MessageBus.publish(`Animation_Suplexor${inst.getOwnerID()}`, { fighter: inst, velo: this.peakFallVelocity }); // Instigator performed suplex
+    MessageBus.publish(`Animation_Suplexed${vict.getOwnerID()}`, { fighter: vict, velo: this.peakFallVelocity }); // Victim received suplex
   }
 
   public get replicationNumericA(): number {
